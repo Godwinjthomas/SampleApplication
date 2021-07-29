@@ -1,0 +1,34 @@
+
+<html>
+{% load static %}
+<head>
+    <title>Signup</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}">
+</head>
+<body>
+<form method="POST" action="{% url 'login' %}">
+    {% csrf_token %}
+    <div class="container">
+        <div class="card">
+            <div class="inner-box" id="card">
+                <div class="card-front">
+                    <h2>LOGIN</h2>
+
+                        <span class="label-input">Username  </span>
+                        <input type="username" class="input-box" name="Username" placeholder="Enter the username" required>
+                        <span class="label-input">Password</span>
+                        <input type="password" class="input-box" name= "Password" placeholder="Enter the password" required>
+                        <button type="submit" class="submit-btn">submit</button>
+                        <input type="checkbox"><span>Remember Me</span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+</html>
+
+     
+

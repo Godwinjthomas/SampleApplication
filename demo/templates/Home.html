@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}">
+</head>
+<body>
+<form action="post">
+    <div class="navbar">
+        <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+        <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+        <a href="{% url 'login' %}"><i class="fa fa-fw fa-user"></i> Login</a>
+        <a href="{% url 'register' %}"><i class="fa-thin fa-book"></i> Register </a>
+
+</div>
+    </div>
+    <div class="container"></div>
+        <div id="mySidenav" class="sidenav">
+             <a href="#" id="about">About</a>
+             <a href="#" id="blog">Blog</a>
+             <a href="#" id="projects">Projects</a>
+             <a href="#" id="contact">Contact</a>
+        </div>
+</form>
+</body>
+</html>
